@@ -11,6 +11,7 @@ public class Main {
 		ejercicioEstudianteBeca();
 		ejercicioTermometro();
 		ejercicioReloj();
+		ejercicioContacto();
 	}
 
 	private static void ejercicioPersona() {
@@ -140,4 +141,28 @@ public class Main {
         System.out.println(reloj3);
 		
 	}
+	
+	private static void ejercicioContacto() {
+		
+		System.out.println("\n===== EJERCICIO 8: CONTACTO =====");
+		Contacto c1 = new Contacto("Juan", "1234-5678", "juan@gmail.com");		//
+	    Contacto c2 = new Contacto("Ana", "22345678", "ana@gmail.com");         //Varios contactos con formatos de numeros diferentes
+	    Contacto c3 = new Contacto("David", "3234 5678", "david@gmail.com");	//
+	    Contacto c4 = new Contacto("Maria", "4234567", "maria.gmail.com");
+
+        System.out.println("---Contacto 1---");
+	    System.out.println(c1.mostrarContacto());
+	    
+        System.out.println("---Contacto 2---");
+	    System.out.println(c2.mostrarContacto());
+	    
+        System.out.println("---Contacto 3---");
+	    System.out.println(c3.mostrarContacto());
+	    
+        System.out.println("---Contacto 4---");
+	    System.out.println(c4.mostrarContacto());
+	}
+	
+	
+
 }
