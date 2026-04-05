@@ -10,6 +10,7 @@ public class Main {
 		ejercicioCurso();
 		ejercicioEstudianteBeca();
 		ejercicioTermometro();
+		ejercicioReloj();
 	}
 
 	private static void ejercicioPersona() {
@@ -124,6 +125,19 @@ public class Main {
 
         System.out.println("\n---Termómetro 2---");
         System.out.println(t2);
+		
+	}
+	
+	private static void ejercicioReloj() {
+		
+		System.out.println("\n===== EJERCICIO 7: RELOJ CON FORMATO =====");
+		Reloj reloj1 = new Reloj(10, 30, 45);
+        Reloj reloj2 = new Reloj(25, 15, 20);
+        Reloj reloj3 = new Reloj(12, 70, -5);
+
+        System.out.println(reloj1);
+        System.out.println(reloj2);
+        System.out.println(reloj3);
 		
 	}
 }
