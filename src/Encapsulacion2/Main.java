@@ -99,7 +99,6 @@ public class Main {
 	private static void ejercicioEstudianteBeca() {
 		
 		System.out.println("\\n===== EJERCICIO 5: ESTUDIANTE Y BECA =====");
-
         Estudiante e1 = new Estudiante("2026001", "Daniel", 90);
         Estudiante e2 = new Estudiante("2026002", "Ana", 60);
         Estudiante e3 = new Estudiante("2026003", "Luis", -150);
@@ -115,6 +114,16 @@ public class Main {
 	}
 	
 	private static void ejercicioTermometro() {
+		
+		System.out.println("\n===== EJERCICIO 6: TERMOMETRO =====");
+		Termometro t1 = new Termometro(25);
+        Termometro t2 = new Termometro(-300);
+
+        System.out.println("---Termómetro 1---");
+        System.out.println(t1);
+
+        System.out.println("\n---Termómetro 2---");
+        System.out.println(t2);
 		
 	}
 }
