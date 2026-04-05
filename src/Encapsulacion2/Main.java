@@ -13,6 +13,7 @@ public class Main {
 		ejercicioReloj();
 		ejercicioContacto();
 		ejercicioJugador();
+		ejercicioFactura();
 	}
 
 	private static void ejercicioPersona() {
@@ -192,6 +193,27 @@ public class Main {
                            " | Puntaje máximo: " + mejor.getPuntajeMaximo());
 	}
 	
-	
+	private static void ejercicioFactura() {
+		
+		System.out.println("\n===== EJERCICIO 10: FACTURA =====");
+		// Factura válida
+        Factura f1 = new Factura("F001", "Teclado", 2, 150.50);
+
+        // Factura con errores en cantidad y precio
+        Factura f2 = new Factura("F002", "Mouse", -3, 0);
+        
+        // Factura con nombre y descripcion invalidos
+        Factura f3 = new Factura("","", 5, 6);
+        
+        System.out.println("\n---Factura 1---");
+        System.out.println(f1.mostrarFactura());
+        
+        System.out.println("\n---Factura 2---");
+        System.out.println(f2.mostrarFactura());
+        
+        System.out.println("\n---Factura 3---");
+        System.out.println(f3.mostrarFactura());
+
+	}
 
 }
