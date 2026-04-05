@@ -12,6 +12,7 @@ public class Main {
 		ejercicioTermometro();
 		ejercicioReloj();
 		ejercicioContacto();
+		ejercicioJugador();
 	}
 
 	private static void ejercicioPersona() {
@@ -161,6 +162,34 @@ public class Main {
 	    
         System.out.println("---Contacto 4---");
 	    System.out.println(c4.mostrarContacto());
+	}
+	
+	private static void ejercicioJugador() {
+		
+		System.out.println("\n===== EJERCICIO 9: JUGADOR =====");
+        Jugador j1 = new Jugador("Carlos");
+        j1.actualizarPuntaje(50);
+        j1.actualizarPuntaje(180);
+        j1.actualizarPuntaje(100);
+
+        Jugador j2 = new Jugador("Ana");
+        j2.actualizarPuntaje(-10);
+        j2.actualizarPuntaje(40);
+
+        System.out.println(j1.mostrarJugador());
+        System.out.println(j2.mostrarJugador());
+        // Determinar el jugador con mayor puntaje máximo
+        Jugador mejor;
+
+        if (j1.getPuntajeMaximo() > j2.getPuntajeMaximo()) {
+            mejor = j1;
+        } else {
+            mejor = j2;
+        }
+
+        System.out.println("🏆 Mejor jugador:");
+        System.out.println("Nombre: " + mejor.getNombre() +
+                           " | Puntaje máximo: " + mejor.getPuntajeMaximo());
 	}
 	
 	
