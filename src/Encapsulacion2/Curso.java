@@ -19,12 +19,15 @@ public class Curso {
 
 	//Validacion de notas 
 	private double validarNota(double nota) {
-	        if (nota < 0 || nota > 100) {
-	            mensaje += "Nota inválida (" + nota + "). Se asignará 0.\n";
-	            return 0;
-	        }
-	        return nota;
+	    if (nota < 0) {
+	        mensaje += "Nota inválida (" + nota + "). Se asignará 0.\n";
+	        return 0;
+	    } else if (nota > 100) {
+	        mensaje += "Nota inválida (" + nota + "). Se asignará 100.\n";
+	        return 100;
 	    }
+	    return nota;
+	}
 	
 	//Getters and Setters
 	public String getNombreCurso() {return nombreCurso;}

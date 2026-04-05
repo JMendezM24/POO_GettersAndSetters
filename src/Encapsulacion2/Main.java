@@ -8,6 +8,8 @@ public class Main {
 		ejercicioProducto();
 		ejercicioCuentaBancaria();
 		ejercicioCurso();
+		ejercicioEstudianteBeca();
+		ejercicioTermometro();
 	}
 
 	private static void ejercicioPersona() {
@@ -84,13 +86,35 @@ public class Main {
 	private static void ejercicioCurso() {
 		
 		System.out.println("\n===== EJERCICIO 4: CURSO =====");	
-		Curso c1 = new Curso("Matemática", 70, 80, 90);
-        Curso c2 = new Curso("Programación", 50, -20, 55);
+		Curso c1 = new Curso("Calculo", 70, 80, 90);
+        Curso c2 = new Curso("Programación I", 50, -20, 110);
 
         System.out.println("---Curso 1---");
         System.out.println(c1);
 
         System.out.println("\n---Curso 2---");
         System.out.println(c2);
+	}
+	
+	private static void ejercicioEstudianteBeca() {
+		
+		System.out.println("\\n===== EJERCICIO 5: ESTUDIANTE Y BECA =====");
+
+        Estudiante e1 = new Estudiante("2026001", "Daniel", 90);
+        Estudiante e2 = new Estudiante("2026002", "Ana", 60);
+        Estudiante e3 = new Estudiante("2026003", "Luis", -150);
+
+        System.out.println("---Estudiante 1---");
+        System.out.println(e1);
+
+        System.out.println("\n---Estudiante 2---");
+        System.out.println(e2);
+
+        System.out.println("\n---Estudiante 3---");
+        System.out.println(e3);
+	}
+	
+	private static void ejercicioTermometro() {
+		
 	}
 }
